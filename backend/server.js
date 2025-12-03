@@ -18,5 +18,5 @@ app.get("/", (req, res) => {
 app.use("/todos", todoRoutes);
 
 app.listen(PORT, () => {
-    console.log("Server is listening port ${PORT}");
+    console.log(`Server is listening port ${PORT}`);
 });
