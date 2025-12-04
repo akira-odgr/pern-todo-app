@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5001;
 
 const app = express();
 
-app.use(cors({ origin: ["https://pern-todo-app-lovat.vercel.app"] }));
+app.use(cors({ origin: "https://pern-todo-app-lovat.vercel.app" }));
 app.use(express.json());
 
 app.use("/todos", todoRoutes);
