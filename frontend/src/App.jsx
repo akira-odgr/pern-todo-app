@@ -84,7 +84,7 @@ function App() {
     const deleteTodo = async (id) => {
         try {
             setError(null);
-            await axios.delete(`http://localhost:5001/todos/${id}`);
+            await axios.delete(`${API_URL}/todos/${id}`);
             setTodos(todos.filter((todo) => todo.todo_id !== id));
         } catch (err) {
             console.error(err.message);
